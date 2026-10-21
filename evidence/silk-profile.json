@@ -1,0 +1,1046 @@
+[
+  {
+    "path": "/api/orders/summary/broken/",
+    "status": 200,
+    "order_count": 250,
+    "silk_request_id": "14cf3a51-9890-4575-9e56-e75800638fe8",
+    "query_count": 253,
+    "time_taken_ms": 414.654,
+    "queries": [
+      {
+        "query": "SELECT \"django_session\".\"session_key\", \"django_session\".\"session_data\", \"django_session\".\"expire_date\" FROM \"django_session\" WHERE (\"django_session\".\"expire_date\" > 2026-10-21 12:05:31.219303 AND \"django_session\".\"session_key\" = gg7r7bcf1ulw05py96jka7ub7074hded) LIMIT 21",
+        "time_taken": 0.404
+      },
+      {
+        "query": "SELECT \"auth_user\".\"id\", \"auth_user\".\"password\", \"auth_user\".\"last_login\", \"auth_user\".\"is_superuser\", \"auth_user\".\"username\", \"auth_user\".\"first_name\", \"auth_user\".\"last_name\", \"auth_user\".\"email\", \"auth_user\".\"is_staff\", \"auth_user\".\"is_active\", \"auth_user\".\"date_joined\" FROM \"auth_user\" WHERE \"auth_user\".\"id\" = 1 LIMIT 21",
+        "time_taken": 0.419
+      },
+      {
+        "query": "SELECT \"orders_order\".\"id\", \"orders_order\".\"user_id\", \"orders_order\".\"created_at\" FROM \"orders_order\" WHERE \"orders_order\".\"user_id\" = 1 ORDER BY \"orders_order\".\"id\" ASC",
+        "time_taken": 0.7290000000000001
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 1",
+        "time_taken": 0.324
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 2",
+        "time_taken": 0.352
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 3",
+        "time_taken": 0.23900000000000002
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 4",
+        "time_taken": 0.283
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 5",
+        "time_taken": 0.299
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 6",
+        "time_taken": 0.231
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 7",
+        "time_taken": 0.23800000000000002
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 8",
+        "time_taken": 0.22699999999999998
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 9",
+        "time_taken": 0.297
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 10",
+        "time_taken": 0.264
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 11",
+        "time_taken": 0.263
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 12",
+        "time_taken": 0.23
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 13",
+        "time_taken": 0.216
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 14",
+        "time_taken": 0.205
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 15",
+        "time_taken": 0.23299999999999998
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 16",
+        "time_taken": 0.495
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 17",
+        "time_taken": 0.598
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 18",
+        "time_taken": 0.38699999999999996
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 19",
+        "time_taken": 0.281
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 20",
+        "time_taken": 0.263
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 21",
+        "time_taken": 0.216
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 22",
+        "time_taken": 0.22599999999999998
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 23",
+        "time_taken": 0.212
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 24",
+        "time_taken": 0.225
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 25",
+        "time_taken": 0.228
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 26",
+        "time_taken": 0.211
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 27",
+        "time_taken": 0.241
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 28",
+        "time_taken": 0.283
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 29",
+        "time_taken": 0.23299999999999998
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 30",
+        "time_taken": 0.231
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 31",
+        "time_taken": 0.217
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 32",
+        "time_taken": 0.309
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 33",
+        "time_taken": 0.29100000000000004
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 34",
+        "time_taken": 0.251
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 35",
+        "time_taken": 0.231
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 36",
+        "time_taken": 0.222
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 37",
+        "time_taken": 0.231
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 38",
+        "time_taken": 0.208
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 39",
+        "time_taken": 0.236
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 40",
+        "time_taken": 0.211
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 41",
+        "time_taken": 0.231
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 42",
+        "time_taken": 0.257
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 43",
+        "time_taken": 0.237
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 44",
+        "time_taken": 0.245
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 45",
+        "time_taken": 0.23399999999999999
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 46",
+        "time_taken": 0.264
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 47",
+        "time_taken": 0.23
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 48",
+        "time_taken": 0.26699999999999996
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 49",
+        "time_taken": 0.244
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 50",
+        "time_taken": 0.264
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 51",
+        "time_taken": 0.222
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 52",
+        "time_taken": 0.223
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 53",
+        "time_taken": 0.268
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 54",
+        "time_taken": 0.251
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 55",
+        "time_taken": 0.22699999999999998
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 56",
+        "time_taken": 0.229
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 57",
+        "time_taken": 0.224
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 58",
+        "time_taken": 0.216
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 59",
+        "time_taken": 0.24600000000000002
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 60",
+        "time_taken": 0.221
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 61",
+        "time_taken": 0.196
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 62",
+        "time_taken": 0.21800000000000003
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 63",
+        "time_taken": 0.221
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 64",
+        "time_taken": 0.206
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 65",
+        "time_taken": 0.224
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 66",
+        "time_taken": 0.22699999999999998
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 67",
+        "time_taken": 0.222
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 68",
+        "time_taken": 0.251
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 69",
+        "time_taken": 0.256
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 70",
+        "time_taken": 0.247
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 71",
+        "time_taken": 0.235
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 72",
+        "time_taken": 0.217
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 73",
+        "time_taken": 0.23800000000000002
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 74",
+        "time_taken": 0.23
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 75",
+        "time_taken": 0.213
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 76",
+        "time_taken": 0.235
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 77",
+        "time_taken": 0.221
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 78",
+        "time_taken": 0.24899999999999997
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 79",
+        "time_taken": 0.255
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 80",
+        "time_taken": 0.24899999999999997
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 81",
+        "time_taken": 0.221
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 82",
+        "time_taken": 0.24600000000000002
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 83",
+        "time_taken": 0.25999999999999995
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 84",
+        "time_taken": 0.219
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 85",
+        "time_taken": 0.352
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 86",
+        "time_taken": 0.243
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 87",
+        "time_taken": 0.228
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 88",
+        "time_taken": 0.313
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 89",
+        "time_taken": 0.33
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 90",
+        "time_taken": 0.285
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 91",
+        "time_taken": 0.273
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 92",
+        "time_taken": 0.225
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 93",
+        "time_taken": 0.217
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 94",
+        "time_taken": 0.213
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 95",
+        "time_taken": 0.217
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 96",
+        "time_taken": 0.252
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 97",
+        "time_taken": 0.27999999999999997
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 98",
+        "time_taken": 0.206
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 99",
+        "time_taken": 0.217
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 100",
+        "time_taken": 0.22699999999999998
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 101",
+        "time_taken": 0.22599999999999998
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 102",
+        "time_taken": 0.232
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 103",
+        "time_taken": 0.22
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 104",
+        "time_taken": 0.262
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 105",
+        "time_taken": 0.25
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 106",
+        "time_taken": 0.256
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 107",
+        "time_taken": 0.212
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 108",
+        "time_taken": 0.521
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 109",
+        "time_taken": 0.366
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 110",
+        "time_taken": 0.36000000000000004
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 111",
+        "time_taken": 0.33799999999999997
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 112",
+        "time_taken": 0.359
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 113",
+        "time_taken": 0.39599999999999996
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 114",
+        "time_taken": 0.373
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 115",
+        "time_taken": 0.266
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 116",
+        "time_taken": 0.24899999999999997
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 117",
+        "time_taken": 0.225
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 118",
+        "time_taken": 0.219
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 119",
+        "time_taken": 0.213
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 120",
+        "time_taken": 0.215
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 121",
+        "time_taken": 0.22
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 122",
+        "time_taken": 0.211
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 123",
+        "time_taken": 0.219
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 124",
+        "time_taken": 0.21000000000000002
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 125",
+        "time_taken": 0.21000000000000002
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 126",
+        "time_taken": 0.216
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 127",
+        "time_taken": 0.306
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 128",
+        "time_taken": 0.253
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 129",
+        "time_taken": 0.273
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 130",
+        "time_taken": 0.22599999999999998
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 131",
+        "time_taken": 0.203
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 132",
+        "time_taken": 0.23399999999999999
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 133",
+        "time_taken": 0.221
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 134",
+        "time_taken": 0.22599999999999998
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 135",
+        "time_taken": 0.24899999999999997
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 136",
+        "time_taken": 0.231
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 137",
+        "time_taken": 0.28200000000000003
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 138",
+        "time_taken": 0.363
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 139",
+        "time_taken": 0.345
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 140",
+        "time_taken": 0.24000000000000002
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 141",
+        "time_taken": 0.22599999999999998
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 142",
+        "time_taken": 0.221
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 143",
+        "time_taken": 0.208
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 144",
+        "time_taken": 0.22599999999999998
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 145",
+        "time_taken": 0.285
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 146",
+        "time_taken": 0.23800000000000002
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 147",
+        "time_taken": 0.474
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 148",
+        "time_taken": 0.464
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 149",
+        "time_taken": 0.46
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 150",
+        "time_taken": 0.283
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 151",
+        "time_taken": 0.356
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 152",
+        "time_taken": 0.441
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 153",
+        "time_taken": 0.516
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 154",
+        "time_taken": 0.612
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 155",
+        "time_taken": 0.592
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 156",
+        "time_taken": 0.361
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 157",
+        "time_taken": 0.265
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 158",
+        "time_taken": 0.443
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 159",
+        "time_taken": 0.482
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 160",
+        "time_taken": 0.541
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 161",
+        "time_taken": 0.6809999999999999
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 162",
+        "time_taken": 0.5730000000000001
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 163",
+        "time_taken": 0.66
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 164",
+        "time_taken": 0.382
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 165",
+        "time_taken": 0.44499999999999995
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 166",
+        "time_taken": 0.348
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 167",
+        "time_taken": 0.281
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 168",
+        "time_taken": 0.316
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 169",
+        "time_taken": 0.359
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 170",
+        "time_taken": 0.544
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 171",
+        "time_taken": 0.5199999999999999
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 172",
+        "time_taken": 0.5339999999999999
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 173",
+        "time_taken": 0.438
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 174",
+        "time_taken": 0.773
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 175",
+        "time_taken": 0.5559999999999999
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 176",
+        "time_taken": 0.352
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 177",
+        "time_taken": 0.32
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 178",
+        "time_taken": 0.321
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 179",
+        "time_taken": 0.354
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 180",
+        "time_taken": 0.361
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 181",
+        "time_taken": 0.3
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 182",
+        "time_taken": 0.305
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 183",
+        "time_taken": 0.28800000000000003
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 184",
+        "time_taken": 0.315
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 185",
+        "time_taken": 0.395
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 186",
+        "time_taken": 0.3
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 187",
+        "time_taken": 0.337
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 188",
+        "time_taken": 0.33399999999999996
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 189",
+        "time_taken": 0.29100000000000004
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 190",
+        "time_taken": 0.298
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 191",
+        "time_taken": 0.28600000000000003
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 192",
+        "time_taken": 0.242
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 193",
+        "time_taken": 0.287
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 194",
+        "time_taken": 0.272
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 195",
+        "time_taken": 0.328
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 196",
+        "time_taken": 0.412
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 197",
+        "time_taken": 0.319
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 198",
+        "time_taken": 0.372
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 199",
+        "time_taken": 0.35
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 200",
+        "time_taken": 0.30200000000000005
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 201",
+        "time_taken": 0.33399999999999996
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 202",
+        "time_taken": 0.304
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 203",
+        "time_taken": 0.35
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 204",
+        "time_taken": 0.33
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 205",
+        "time_taken": 0.339
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 206",
+        "time_taken": 0.359
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 207",
+        "time_taken": 0.315
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 208",
+        "time_taken": 0.28600000000000003
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 209",
+        "time_taken": 0.297
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 210",
+        "time_taken": 0.301
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 211",
+        "time_taken": 0.33
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 212",
+        "time_taken": 0.30200000000000005
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 213",
+        "time_taken": 0.307
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 214",
+        "time_taken": 0.345
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 215",
+        "time_taken": 0.332
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 216",
+        "time_taken": 0.315
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 217",
+        "time_taken": 0.311
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 218",
+        "time_taken": 0.279
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 219",
+        "time_taken": 0.303
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 220",
+        "time_taken": 0.27099999999999996
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 221",
+        "time_taken": 0.297
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 222",
+        "time_taken": 0.27099999999999996
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 223",
+        "time_taken": 0.294
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 224",
+        "time_taken": 0.30200000000000005
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 225",
+        "time_taken": 0.359
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 226",
+        "time_taken": 0.306
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 227",
+        "time_taken": 0.38699999999999996
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 228",
+        "time_taken": 0.33799999999999997
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 229",
+        "time_taken": 0.283
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 230",
+        "time_taken": 0.287
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 231",
+        "time_taken": 0.33599999999999997
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 232",
+        "time_taken": 0.32699999999999996
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 233",
+        "time_taken": 0.24000000000000002
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 234",
+        "time_taken": 0.23299999999999998
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 235",
+        "time_taken": 0.221
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 236",
+        "time_taken": 0.254
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 237",
+        "time_taken": 0.22599999999999998
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 238",
+        "time_taken": 0.217
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 239",
+        "time_taken": 0.225
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 240",
+        "time_taken": 0.206
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 241",
+        "time_taken": 0.217
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 242",
+        "time_taken": 0.237
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 243",
+        "time_taken": 0.28200000000000003
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 244",
+        "time_taken": 0.235
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 245",
+        "time_taken": 0.245
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 246",
+        "time_taken": 0.259
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 247",
+        "time_taken": 0.255
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 248",
+        "time_taken": 0.24000000000000002
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 249",
+        "time_taken": 0.224
+      },
+      {
+        "query": "SELECT \"orders_orderitem\".\"id\", \"orders_orderitem\".\"order_id\", \"orders_orderitem\".\"quantity\", \"orders_orderitem\".\"unit_price\" FROM \"orders_orderitem\" WHERE \"orders_orderitem\".\"order_id\" = 250",
+        "time_taken": 0.243
+      }
+    ]
+  },
+  {
+    "path": "/api/orders/summary/",
+    "status": 200,
+    "order_count": 250,
+    "silk_request_id": "f8e591da-0f78-4960-8e56-63e79296bd28",
+    "query_count": 3,
+    "time_taken_ms": 15.91,
+    "queries": [
+      {
+        "query": "SELECT \"django_session\".\"session_key\", \"django_session\".\"session_data\", \"django_session\".\"expire_date\" FROM \"django_session\" WHERE (\"django_session\".\"expire_date\" > 2026-10-21 12:05:32.009045 AND \"django_session\".\"session_key\" = gg7r7bcf1ulw05py96jka7ub7074hded) LIMIT 21",
+        "time_taken": 0.448
+      },
+      {
+        "query": "SELECT \"auth_user\".\"id\", \"auth_user\".\"password\", \"auth_user\".\"last_login\", \"auth_user\".\"is_superuser\", \"auth_user\".\"username\", \"auth_user\".\"first_name\", \"auth_user\".\"last_name\", \"auth_user\".\"email\", \"auth_user\".\"is_staff\", \"auth_user\".\"is_active\", \"auth_user\".\"date_joined\" FROM \"auth_user\" WHERE \"auth_user\".\"id\" = 1 LIMIT 21",
+        "time_taken": 0.292
+      },
+      {
+        "query": "SELECT \"orders_order\".\"id\", \"orders_order\".\"user_id\", \"orders_order\".\"created_at\", (CAST(COALESCE((CAST(SUM((CAST((CAST((\"orders_orderitem\".\"quantity\" * \"orders_orderitem\".\"unit_price\") AS NUMERIC)) AS NUMERIC))) AS NUMERIC)), (CAST(0.00 AS NUMERIC))) AS NUMERIC)) AS \"total\" FROM \"orders_order\" LEFT OUTER JOIN \"orders_orderitem\" ON (\"orders_order\".\"id\" = \"orders_orderitem\".\"order_id\") WHERE \"orders_order\".\"user_id\" = 1 GROUP BY \"orders_order\".\"id\", \"orders_order\".\"user_id\", \"orders_order\".\"created_at\" ORDER BY \"orders_order\".\"id\" ASC",
+        "time_taken": 1.242
+      }
+    ]
+  }
+]

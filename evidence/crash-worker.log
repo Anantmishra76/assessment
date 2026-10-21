@@ -1,0 +1,47 @@
+
+ -------------- celery@Anant v5.6.3 (recovery)
+--- ***** -----
+-- ******* ---- Windows-11-10.0.26300-SP0 2026-10-21 17:44:31
+- *** --- * ---
+- ** ---------- [config]
+- ** ---------- .> app:         assessment:0x192a5d42120
+- ** ---------- .> transport:   redis://127.0.0.1:16379/0
+- ** ---------- .> results:     redis://127.0.0.1:16379/0
+- *** --- * --- .> concurrency: 1 (solo)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** -----
+ -------------- [queues]
+                .> crash-f1e37d9f8e624437809914e8fdea3ffa exchange=crash-f1e37d9f8e624437809914e8fdea3ffa(direct) key=crash-f1e37d9f8e624437809914e8fdea3ffa
+
+
+[tasks]
+  . mailqueue.tasks.deliver
+  . mailqueue.tasks.dispatch_due
+
+[2026-10-21 17:44:31,888: INFO/MainProcess] Connected to redis://127.0.0.1:16379/0
+[2026-10-21 17:44:31,902: INFO/MainProcess] celery@Anant ready.
+[2026-10-21 17:44:31,904: INFO/MainProcess] Task mailqueue.tasks.deliver[4109d09c-e52d-450e-97bc-7a8ae7ff5085] received
+
+ -------------- celery@Anant v5.6.3 (recovery)
+--- ***** -----
+-- ******* ---- Windows-11-10.0.26300-SP0 2026-10-21 17:44:33
+- *** --- * ---
+- ** ---------- [config]
+- ** ---------- .> app:         assessment:0x1cd554d2120
+- ** ---------- .> transport:   redis://127.0.0.1:16379/0
+- ** ---------- .> results:     redis://127.0.0.1:16379/0
+- *** --- * --- .> concurrency: 1 (solo)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** -----
+ -------------- [queues]
+                .> crash-f1e37d9f8e624437809914e8fdea3ffa exchange=crash-f1e37d9f8e624437809914e8fdea3ffa(direct) key=crash-f1e37d9f8e624437809914e8fdea3ffa
+
+
+[tasks]
+  . mailqueue.tasks.deliver
+  . mailqueue.tasks.dispatch_due
+
+[2026-10-21 17:44:33,855: INFO/MainProcess] Connected to redis://127.0.0.1:16379/0
+[2026-10-21 17:44:33,867: INFO/MainProcess] celery@Anant ready.
+[2026-10-21 17:46:00,355: INFO/MainProcess] Task mailqueue.tasks.deliver[b64cdd8e-7a2d-4a8b-ab19-a43f3eb7ae9a] received
+[2026-10-21 17:46:00,416: INFO/MainProcess] Task mailqueue.tasks.deliver[b64cdd8e-7a2d-4a8b-ab19-a43f3eb7ae9a] succeeded in 0.060862099984660745s: 'sent'

@@ -1,0 +1,49 @@
+x-app: &app
+  build: .
+  environment:
+    REDIS_URL: redis://redis:6379/0
+    RATE_REDIS_URL: redis://redis:6379/1
+    DATABASE_PATH: /data/db.sqlite3
+  volumes:
+    - app-data:/data
+    - ./evidence:/app/evidence
+  depends_on:
+    redis:
+      condition: service_healthy
+
+services:
+  redis:
+    image: redis:7.4-alpine
+    command: redis-server --appendonly yes --appendfsync always --maxmemory-policy noeviction
+    volumes:
+      - redis-data:/data
+    healthcheck:
+      test: [CMD, redis-cli, ping]
+      interval: 2s
+      timeout: 2s
+      retries: 20
+  init:
+    <<: *app
+    command: python manage.py migrate --noinput
+  web:
+    <<: *app
+    command: python manage.py runserver 0.0.0.0:8000
+    ports: ["127.0.0.1:8000:8000"]
+    depends_on:
+      init:
+        condition: service_completed_successfully
+  worker:
+    <<: *app
+    command: celery -A config worker --loglevel=INFO --concurrency=1
+    depends_on:
+      init:
+        condition: service_completed_successfully
+  beat:
+    <<: *app
+    command: celery -A config beat --loglevel=INFO --schedule=/data/celerybeat-schedule
+    depends_on:
+      init:
+        condition: service_completed_successfully
+volumes:
+  app-data:
+  redis-data:

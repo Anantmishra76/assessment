@@ -1,0 +1,10 @@
+{
+  "worker_force_killed": true,
+  "platform": "win32",
+  "termination": "Windows TerminateProcess",
+  "status": "sent",
+  "task_provider_entries": 2,
+  "provider_effects": 1,
+  "elapsed_seconds": 90.74,
+  "note": "Outbox/lease recovery tested; solo pool does not test prefork child rejection"
+}
