@@ -89,16 +89,6 @@ celery -A config beat --loglevel=INFO
 
 Default Redis URLs use localhost port 6379. Set `REDIS_URL` and `RATE_REDIS_URL` to override. `.env.example` documents configuration; it is not automatically loaded by Django. Compose already sets its own environment. A fully resolved dependency snapshot is included as `requirements-lock.txt`.
 
-## Optional recording walkthrough
-
-1. Start the Compose services from a fresh terminal.
-2. Submit at least 100 jobs; use 500 to demonstrate throttling beyond the first window.
-3. Display the Redis commands and worker logs above.
-4. Show the intentional temporary failure and its delayed retry.
-5. Display the integration report's rolling-window maximum and final database counts.
-6. Explain late acknowledgements, idempotency, and the outbox recovery process.
-
-The optional 5–10 minute recording has not been created. Add your Loom link here if you choose to record it.
 
 ## Submission
 
